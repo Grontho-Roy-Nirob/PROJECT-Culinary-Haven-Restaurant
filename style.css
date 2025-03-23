@@ -1,0 +1,290 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h5{
+    font-family: "Roboto", sans-serif;
+}
+
+.section-title h3{
+      font-weight:bolder;
+      margin-bottom: 0;
+}
+
+.hr-style{
+    border: 5px dotted white;
+    border-bottom: none;
+    width:50px;
+    margin: auto; /* Centers the HR */
+    display: block; /* Ensures it follows block-level behavior */
+}
+
+/* Header Starts Here */
+
+header{
+    background-image: url(Images/R9-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    padding: 1% 10%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.navbar-icon{
+     color: white; 
+}
+
+.navbar-brand img{
+     width: 60px;
+     height: auto;
+}
+
+.nav-link{
+    color: white !important;
+    margin: 10px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.nav-link:hover{
+     background: #2980b9;
+     color: white !important;
+     transform: scale(1.1);
+}
+
+.dropdown-item:hover{
+    background: #b92941 !important;
+}
+
+.banner-container{
+     height: 100vh;
+}
+
+.banner-container h1{
+    font-size: 3.5rem;
+    background-color: rgba(7,101,189,0.8);
+    padding: 10px 20px;
+    font-family: "Handlee", cursive;
+    border-radius: 5px;
+}
+
+/* Header Ends Here */
+
+
+/* Feature Starts Here */
+
+#features{
+       padding: 5% 10%;
+       background: #e8ded2;
+}
+
+.features-col{
+    border: 1px solid #ff02c0;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+    transition: .4s;
+}
+
+.features-col:hover{
+     transform: scale(1.1);
+     box-shadow: 2px 6px 5px black;
+}
+
+.icon-style{
+     background: blueviolet;
+     color: white;
+     padding: 15px;
+     margin: 5px 0;
+}
+
+/* Feature Ends Here */
+
+/* About Section Starts */
+
+#about-us{
+    padding: 4% 10%;
+    /* background: linear-gradient(135deg, #FF9A9E, #FAD0C4); */
+    background: #F5F5F5 
+}
+
+#about-us p{
+       font-size: 0.9rem;
+       margin-bottom: 0;
+       font-weight: light;
+}
+
+#about-us a{
+      font-size: 0.9rem;
+      font-weight: lighter;
+      color: black;
+      text-decoration: underline;
+}
+
+.achieve-desc span{
+        font-weight: 700 !important;
+}
+
+
+/* About Section Ends */
+
+/*  Recipe starts here */
+
+#recipe {
+    padding: 80px 5%;
+    background: #a3d2ca;
+}
+
+.section-title h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card {
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+    
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-img-top {
+    border-radius: 12px 12px 0 0;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.card-body {
+    padding: 25px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.card-link {
+    display: inline-block;
+    font-size: 16px;
+    color: #ff007f;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid #ff007f;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.card-link:hover {
+    background: #ff007f;
+    color: #fff;
+}
+
+/*  Recipe  Ends here */
+
+/* Feedback Starts here */
+
+#feedback{
+    padding: 5%;
+    background: #5eaaa8;
+}
+
+.hr-style {
+    border: 5px dotted white;
+    border-bottom: none;
+    width: 50px;
+    margin: 10px auto;
+}
+
+.carousel-item {
+    padding: 5% 15%;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.feedback-img {
+    width: 120px;
+    height: auto;
+}
+
+.carousel-indicators {
+    bottom: -20px;
+}
+
+
+/* Feedback Ends here */
+
+/* contact section starts here  */
+
+#contact-section {
+    padding: 1%;
+    background: #595b83;
+}
+.contact-details {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.map {
+    width: 90%;
+    height: 350px;
+    border-radius: 10px;
+    border: 0;
+    padding: 20px;
+}
+.contact-details p,
+address {
+    font-size: 1rem;
+}
+
+/* contact section ends here  */
+
+/* footer section starts here */
+
+footer {
+    background: #060930;
+    padding: 1% 10%;
+    color: white;   
+}
+
+footer a{
+    color: white;
+    margin: 0 10px;
+}
+
+footer a:hover{
+    color: grey;
+}
+
+/* footer section Ends here */

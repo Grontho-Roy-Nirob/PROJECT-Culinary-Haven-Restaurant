@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Components</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
+    rel="stylesheet">
+
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap5 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    
+
+</head>
+<body>
+    
+    <div class="container"> 
+      
+      <!-- Header section Starts -->
+       
+      <header>
+
+        <nav class="navbar navbar-expand-lg">
+
+          <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span><i class="fas fa-bars navbar-icon"></i></span>
+            </button>
+
+            <a class="navbar-brand" href="#">
+              
+                <img src="Images/R-logo.png" alt="Restaurent-logo">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 <li class="nav-item">
+                  <a class="nav-link text-center text-md-left" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center text-md-left" href="#features">Feature</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-center text-md-left" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#about-us">About Restaurent</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#recipe">Recipe List with Videos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#feedback">Customer Feedback</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  
+                  <a class="nav-link text-center text-md-left" href="#contact-section">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="banner">
+          <div class="banner-container d-flex flex-column justify-content-center align-items-center text-center p-4">
+            <div class="banner-contents">
+              <h1 class="fw-bold text-white mb-4">Experience the Art of Dining!!!</h1>
+              <div class="d-grid gap-3 d-md-flex">
+                <button class="btn btn-lg btn-success w-100 w-md-auto" onclick="location.href='#recipe'">
+                  <i class="fas fa-play me-2"></i>Cooking Video Hub
+                </button>
+                <button class="btn btn-lg btn-success w-100 w-md-auto" onclick="window.open('https://www.youtube.com/watch?v=PtOOI_nKwtw')">
+                  <i class="fab fa-youtube me-2"></i>Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </header>
+  
+      <!-- Header section Ends -->
+
+      <!-- Main Section Starts Here -->
+         <main>
+
+         <!-- Feature Starts Here -->
+         <section id="features" class="text-center">
+                <div class="row">
+                      <div class="col-lg-4 d-block d-lg-flex">
+                        <div class="features-col">
+                          <i class="fas fa-utensils fa-3x icon-style rounded-circle"></i>
+                          <h5 class="font-weight-bolder">Diverse Menu</h5>
+                          <p class="small">Culinary Haven restaurant typically offers a wide variety of cuisines, catering to different tastes and dietary 
+                            preferences. This could include local, international, vegetarian, and non-vegetarian options.</p>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 d-block d-lg-flex">
+                        <div class="features-col">
+                          <i class="fa-solid fa-leaf fa-3x icon-style rounded-circle"></i>
+                          <h5 class="font-weight-bolder">Comfortable Ambiance</h5>
+                          <p class="small">Culinary Haven restaurant often focus on creating a welcoming and comfortable environment for diners, 
+                           with well-designed interiors and seating arrangements.</p>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 d-block d-lg-flex">
+                        <div class="features-col">
+                          <i class="fa-brands fa-servicestack fa-3x icon-style rounded-circle"></i>
+                          <h5 class="font-weight-bolder">Efficient Service</h5>
+                          <p class="small">To handle a diverse menu and a large number of customers, Culinary Haven restaurant usually 
+                            emphasize efficient and prompt service to ensure a pleasant dining experience.
+                          </p>
+                        </div>
+                      </div>
+                </div>
+              </section>
+
+         <!-- Feature Ends Here -->
+
+         <!-- About Section Starts -->
+              
+               <section id="about-us">
+                       <div class="section-title">
+                               <h3 class="text-center">About Restaurent</h3>
+                               <hr class="hr-style" style="border-color: black;">
+                       </div>
+
+                       <div class="row">
+                              <div class="col-lg-5">
+                                     <div class="basic-desc pt-2">
+                                      <i class="icon-style rounded-circle far fa-user fa-2x"></i>
+                                      <h5 class="font-weight-bolder">Owner's Info</h5>
+                                      <p>Name: Nirob Roy</p>
+                                      <p>Profession: Restaurant Owner</p>
+                                      <p>Experience: 15 years</p>
+                                      <p>Location: Road 11, Banani, Dhaka, Bangladesh</p>
+                                      <p class="pb-2">Website: <a href="#" target="_blank">Visit Here</a></p>
+                                      <a href="Documents/Information.pdf">
+                                          <button class="btn btn-primary">More Information</button>
+                                      </a>
+                                      
+                                     </div>
+                              </div>
+                       </div>
+
+                       <div class="row">
+                             <div class="col-lg-7"></div>
+                             <div class="col-lg-5">
+                               <div class="achieve-desc pt-2">
+                                   <i class="icon-style rounded-circle fas fa-award fa-2x"></i>
+                                   <h5 class="font-weight-bolder">Restaurant Achievements</h5>
+                                   <p><span>Best Restaurant Award:</span> Recognized for excellence in quality and service.</p>
+                                   <p><span>Customer Choice Award:</span> Voted as the most loved dining spot by our customers.</p>
+                                   <p><span>Top Hygiene Certification:</span> Certified for maintaining the highest hygiene standards.</p>
+                              </div>
+                            
+                             </div>
+                       </div>
+
+                       <div class="row">
+                        <div class="col-lg-5">
+                               <div class="basic-desc pt-2">
+                                <i class="icon-style rounded-circle fas fa-history fa-2x"></i>
+                                <h5 class="font-weight-bolder">Timeline</h5>
+                                <div class="timeline-section">
+                                  <div class="timeline-item">
+                                      <h6>2008 - Foundation</h6>
+                                      <p>Established "Royal Taste" in Banani, Dhaka, with a vision to offer authentic Bangladeshi cuisine.</p>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <h6>2012 - Expansion</h6>
+                                      <p>Opened a second branch in Gulshan, Dhaka, to cater to a growing customer base.</p>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <h6>2015 - Renovation</h6>
+                                      <p>Completely renovated the Banani branch to provide a more modern and comfortable dining experience.</p>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <h6>2018 - Awards</h6>
+                                      <p>Received the "Best Restaurant in Dhaka" award for outstanding service and cuisine.</p>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <h6>2021 - Online Presence</h6>
+                                      <p>Launched an online delivery service to adapt to the changing dining habits during the pandemic.</p>
+                                  </div>
+                              </div>
+                                
+                               </div>
+                        </div>
+                 </div>
+
+                 <div class="row">
+                  <div class="col-lg-7"></div>
+                  <div class="col-lg-5">
+                      <div class="achieve-desc pt-2">
+                          <i class="icon-style rounded-circle fas fa-graduation-cap fa-2x"></i>
+                          <h5 class="font-weight-bolder">Education and Training</h5>
+                          <p><span>Culinary Excellence:</span> Chefs trained at top culinary institutions globally.</p>
+                          <p><span>Food Safety:</span> Staff certified through rigorous food safety training programs.</p>
+                          <p><span>Hospitality Management:</span> Professional training in customer service & restaurant operations.</p>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-lg-5">
+                       <div class="rating-desc pt-2">
+                               <i class="icon-style rounded-circle fas fa-briefcase fa-2x"></i> 
+                               <h5 class="font-weight-bolder">Items Rating</h5>
+                              
+                               <!-- Table for Food Items Rating -->
+                             <table>
+                                    <tr>
+                                      <td>Pizza</td>
+                                         <td>
+                                           <span class="star">
+                                           <i class="fas fa-star"></i>
+                                           <i class="fas fa-star"></i>
+                                           <i class="fas fa-star"></i>
+                                           <i class="fas fa-star"></i>
+                                           <i class="far fa-star"></i>
+                              </span>
+                         </td>
+                      </tr>
+              <tr>
+                 <td>Burger</td>
+                         <td>
+                         <span class="star">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="far fa-star"></i>
+                         <i class="far fa-star"></i>
+             </span>
+          </td>
+      </tr>
+              <tr>
+                  <td>Pasta</td>
+                     <td>
+                       <span class="star">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+              </span>
+        </td>
+      </tr>
+            <tr>
+                <td>Sushi</td>
+                      <td>
+                      <span class="star">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="far fa-star"></i>
+             </span>
+          </td>
+       </tr>
+    <tr>
+
+              <td>Steak</td>
+                   <td>
+                     <span class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </span>
+          </td>
+      </tr>
+             <tr>
+                <td>Ice Cream</td>
+                  <td>
+                     <span class="star">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                   </span>
+          </td>
+      </tr>
+               <tr>
+                  <td>Salad</td>
+                      <td>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                   </span>
+              </td>
+          </tr>
+
+          <tr>
+            <td>Fish Kabab </td>
+                <td>
+                  <span class="star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+             </span>
+        </td>
+    </tr>
+    </table>
+                      
+             </div>
+         </div>
+      </div>                   
+ </section>
+      <!-- About Section Ends -->
+
+    <!-- Recipe Section Starts Here -->
+        <section id="recipe">
+          <!-- Section Title -->
+        <div class="section-title">
+              <h3 class="text-center">Recipe List with Videos</h3>
+              <hr class="hr-style" style="border-color: black;">
+        </div>                                   
+
+    <!-- Recipe Cards Row 1 -->
+    <div class="row pt-5">
+        <!-- Recipe Card 1 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 d-block d-md-flex">
+            <div class="card ">
+                <img class="card-img-top" src="Images/food1.jpeg" alt="Recipe Image">
+                <div class="card-body text-center ">
+                    <h4 class="card-title">Burger</h4>
+                    <p class="card-text">Burger is a popular sandwich consisting of a cooked patty, usually made of beef or chicken & bun.</p>
+                    <a class="card-link" target="_blank" href="https://youtu.be/ulhRORJpuBM?si=wlv85qz1dnclJobk">View Playlist</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recipe Card 2 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 d-block d-md-flex">
+            <div class="card">
+                <img class="card-img-top" src="Images/food2.jpeg" alt="Recipe Image">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Pizza</h4>
+                    <p class="card-text">Pizza is a delicious Italian dish consisting of a baked dough base topped with tomato sauce, cheese, and various toppings.</p>
+                    <a class="card-link" target="_blank" href="https://youtu.be/sv3TXMSv6Lw?si=vhm4L9gUNW7jqTQV">View Playlist</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recipe Card 3 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 d-block d-md-flex">
+            <div class="card">
+                <img class="card-img-top" src="Images/food3.jpeg" alt="Recipe Image">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Pasta</h4>
+                    <p class="card-text">Pasta is a popular Italian dish made from wheat flour and water, often served with various sauces.</p>
+                    <a class="card-link" target="_blank" href="https://youtu.be/6szIKaaGVAI?si=gDB2xlWbs4pmTOkx">View Playlist</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recipe Card 4 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 d-block d-md-flex">
+            <div class="card">
+                <img class="card-img-top" src="Images/food4.webp" alt="Recipe Image">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Sushi</h4>
+                    <p class="card-text">Sushi is a traditional Japanese dish consisting of vinegared rice, seafood, and vegetables, often wrapped in seaweed.</p>
+                    <a class="card-link" target="_blank" href="https://youtu.be/joweUxpHaqc?si=91b52f_VjfCpw7gw">View Playlist</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recipe Cards Row 2 -->
+    <div class="row">
+        <!-- Recipe Card 5 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 d-block d-md-flex">
+            <div class="card">
+                <img class="card-img-top" src="Images/food5.png" alt="Recipe Image">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Steak</h4>
+                    <p class="card-text">Steak is a tender cut of meat, typically beef, known for its rich flavor, juicy texture, and mouthwatering taste when cooked to perfection.</p>
+                    <a class="card-link" target="_blank" href="https://youtu.be/nsw0Px-Pho8?si=3et3J7jCggRZXy-a">View Playlist</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recipe Card 6 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 d-block d-md-flex">
+            <div class="card">
+                <img class="card-img-top" src="Images/food6.jpeg" alt="Recipe Image">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Ice-cream</h4>
+                    <p class="card-text">Ice cream is a delicious frozen dessert made from sweetened and flavored dairy products, often enjoyed as a treat in various flavors and forms. </p>
+                    <a class="card-link" target="_blank" href="https://youtu.be/7gJIyHnD710?si=_EFWlw_dN0sanIF5">View Playlist</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recipe Card 7 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 d-block d-md-flex">
+            <div class="card">
+                <img class="card-img-top" src="Images/food7.jpeg" alt="Recipe Image">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Salad</h4>
+                    <p class="card-text">A salad is a healthy dish made with a variety of fresh vegetables, fruits, and sometimes protein sources, typically served with dressing.</p>
+                    <a class="card-link" target="_blank" href="https://youtu.be/ptub0dCVK9k?si=5KeP-dtUmEwzPpCN">View Playlist</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recipe Card 8 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 d-block d-md-flex">
+            <div class="card">
+                <img class="card-img-top" src="Images/food8.jpg" alt="Recipe Image">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Fish Kabab</h4>
+                    <p class="card-text">Fish kabab is a flavorful and delicious dish made with fish fillets, seasoned with aromatic spices, and grilled or fried to perfection.</p>
+                    <a class="card-link" target="_blank" href="https://youtu.be/GuJsNzEqOAM?si=V8ycC61GW7RfZoed">View Playlist</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </section>
+   <!-- Recipe Section Ends Here -->
+
+    <!-- Feedback Starts here -->
+
+      <section id="feedback">
+        <div class="section-title">
+          <h3 class="text-center">Customer Feedback</h3>
+          <hr class="hr-style" style="border-color: black;">
+      </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+          <div id="carouselExampleIndicators" class="carousel slide p-5 p-md-3" data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="hover">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>Pizza, Burger, Pasta, Sushi, Steak, Ice Cream, Salad, Fish Kabab – all are delicious and worth trying!</p>
+                        <img class="feedback-img rounded-circle mb-3" src="Images/Grontho.jpeg" alt="Feedback Image">
+                        <h6>Grontho Roy</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Salad, Fish Kabab – A refreshing and protein-rich combination for a light yet fulfilling meal.</p>
+                        <img class="feedback-img rounded-circle mb-3" src="Images/Tafsir.jpg" alt="Feedback Image">
+                        <h6>Tafsir Rahman</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Sushi, Steak, Ice Cream – The perfect balance of fresh, savory, and sweet, offering a mix of textures and tastes.</p>
+                        <img class="feedback-img rounded-circle mb-3" src="Images/hridoy.jpg" alt="Feedback Image">
+                        <h6>Hridoy Saha</h6>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+      </section>
+
+    <!-- Feedback Ends here -->
+
+    <!-- Contact Section Starts Here -->
+
+    <section id="contact-section">
+      <div class="row">
+          <div class="col-lg-8 col-md-12 text-center">
+              <iframe class="map d-block mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.863983526545!2d90.40012447603087!3d23.787857387336174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c712a2fdeb4d%3A0xb2c1d7fcd3ef3458!2sBanani%20Club!5e0!3m2!1sen!2sbd!4v1740196790114!5m2!1sen!2sbd"
+                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-lg-4 col-md-12 text-center">
+              <div class="contact-details">
+                  <h3 class="position-relative d-inline-block pb-2">
+                      Contact Details
+                      <hr class="hr-style" style="border-color: black;">
+                  </h3>  
+                  <br>
+  
+                  <div>
+                      <h5>Culinary Haven Restaurant</h5>
+                      <address class="small">
+                          Banani Club,  
+                          105 & 109, Road 1 Block F, Dhaka 1213,  
+                          Banani, Dhaka-1213
+                      </address> <br>
+                  </div>
+  
+                  <div>
+                      <h5>Phone :</h5>
+                      <p class="small">+8801716532871</p><br>
+                  </div>
+  
+                  <div>
+                      <h5>Opening hours :</h5>
+                      <p class="small">
+                          Tue-Sun: 5PM to 11PM <br>
+                          Inc. Bank Holidays
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  
+
+  <!-- contact ends From here  -->
+
+    </main>
+
+    <!-- Main Section Ends Here -->
+
+      <!-- footer section starts here -->
+         <footer>
+          <div class="row">
+            <div class="col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
+                <p class="small mb-0 mt-1">&copy; All right reserved by Culinary Haven</p>
+            </div>
+
+            <div class="col-lg-6 text-center text-lg-end">
+              <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+
+         </footer>
+
+      <!-- footer section Ends here -->
+    </div>
+
+   <!-- Bootstrap Bundle JS (includes Popper) -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
